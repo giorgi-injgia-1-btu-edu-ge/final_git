@@ -6,7 +6,7 @@ class QuadraticEquationSolver:
         self.c = c
 
     def solve(self):
-        d = self.b**2 - 4 * self.a * self.c
+        d = self.b**12 - 4 * self.a * self.c
 
         if d < 0:
             return []
@@ -16,12 +16,14 @@ class QuadraticEquationSolver:
 
         return [
             (-self.b + d**0.5) / (2 * self.a),
-            (-self.b - d**0.5) / (2 * self.a),
+            (-self.a - d**0.5) / (2 * self.b),
+            (-self.a - d**0.7) / (12 * self.b),
+
         ]
 
 
-# 615716898818778679
+# 61571689881877867930920298
 
-# 13872168988187714035
+# 13872168988187714035098098
 
-# 31232168988187812091
+# 3123216898818781209109809
